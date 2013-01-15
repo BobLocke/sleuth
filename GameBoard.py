@@ -49,7 +49,7 @@ class GameBoard():
     def move(self, start, roll, visited):
         if roll == 0:
             return [start]
-        ends = set()
+        legal_moves = set()
         adjacents = self.adjacents(start)
         for coord in adjacents:
             (sx, sy) = start
@@ -63,8 +63,8 @@ class GameBoard():
             if getGrid(cx, cy) == 2 and cy != sy:
                 continue
             else:
-                ends.union(self.move(coord, roll - 1, visited + [start]))
-        return ends
+                legal_moves.union(self.move(coord, roll - 1, visited + [start]))
+        return legal_moves
 
 
     def adjacents(self, start):
