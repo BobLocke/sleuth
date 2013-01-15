@@ -10,6 +10,8 @@
 #-------------------------------------------------------------------------------
 #!/usr/bin/env python
 
+# On the gameboard, 0 means inaccessable, 1 means normal space, 2 means east/west door, 3 means north/south door.
+
 class GameBoard():
     GRID =  [
                 [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
