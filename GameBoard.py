@@ -45,6 +45,7 @@ class GameBoard():
         return self.GRID[y, x]
 
     # visited starts with the positions of all players (not counting rooms)
+    # on
     def move(self, start, roll, visited):
         if roll == 0:
             return [start]
@@ -62,7 +63,7 @@ class GameBoard():
             if getGrid(cx, cy) == 2 and cy != sy:
                 continue
             else:
-                ends.union(self.move(move, roll - 1, visited + [start]))
+                ends.union(self.move(coord, roll - 1, visited + [start]))
         return ends
 
 
