@@ -4,4 +4,4 @@ some JS and PHP. It didn't get that far due to me not having the time to put int
 knowledge to easily pick up new langauges. This is still here on the off chance I decide 
 to pick it back up. Perhaps with the expertise I have now I could accomplish it in a 
 resonable timeframe, but my inspiration is lacking due to new ways to play board games 
-only making it obsolete.
+online making it obsolete.
